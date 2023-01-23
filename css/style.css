@@ -1,0 +1,19 @@
+body {
+  background-color:red;
+}
+
+h1 {
+  color:white;
+  text-align: center;
+  font-family: Brush Script MT;
+  font-size: 50px;
+}
+
+p {
+  font-family: Brush Script MT;
+  font-size: 40px;
+}
+#block{
+color:black;
+front-size:60px;
+}
