@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>mypage</title>
+</head>
+<script>
+function loginvalidation()
+{
+if(document.login.name.value=='')
+{
+alert("please enter name");
+return false;
+}
+if(document.login.email.value=='')
+{
+alert("please enter email");
+return false;
+}
+if(document.login.pass.value=='')
+{
+alert("please enter password");
+return false;
+}
+}
+</script>
+<body>
+<form name="login" method="post" onsubmit="return loginvalidation()">
+<table width=50%" height="50%" border="1" cellpadding="20" align="center" bgcolor="lightpink">
+<tr>
+<th>Name</th>
+<td><input type="text" name="user" id="user" value="" class="txt"></td>
+</tr>
+<tr>
+<th>Email</th>
+<td><input type="text" name="user" id="user" value="" class="txt"></td>
+</tr>
+<tr>
+<th>Password</th>
+<td><input type="password" name="pass" id="pass" class="txt" value="" placeholder=""></td>
+</tr>
+<tr>
+<th>Address</th>
+<td><textarea name="address" id="address" class="txt" value=""></textarea></td>
+</tr>
+<tr>
+<th>City</th>
+<td><select name="city" id="city"txt">
+<option value="nagpur">nagpur</option>
+<option value="gondia">gondia</option>
+</select>
+</tr>
+<tr>
+<th>Gender</th>
+<td>
+<input type="radio" name="gender" id="gender" value="male">male 
+<input type="radio" name="gender" id="gender" value="female">female 
+</td>
+</tr>
+<tr>
+<th colspan="4"><input type="submit" name="save" id="save" value="submit" class=""></th>
+
+
+</table>
+</body>
+</html>
+

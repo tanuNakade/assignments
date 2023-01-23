@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+#container{
+background-color:lightgray;
+width:20%;
+padding:10px;
+}
+</style>
+
+  <script>
+    $(document).ready(function() {
+      $("#btn1").click(function() {
+        var num1 = $("#num1").val();
+        var num2 = $("#num2").val();
+        var answer = parseInt(num1) + parseInt(num2);
+        $("#answer").val(answer);
+      });
+	  
+	  $("#btn2").click(function() {
+        var num1 = $("#num1").val();
+        var num2 = $("#num2").val();
+        var answer = parseInt(num1) - parseInt(num2);
+        $("#answer").val(answer);
+      });
+	  
+	  $("#btn3").click(function() {
+        var num1 = $("#num1").val();
+        var num2 = $("#num2").val();
+        var answer = parseInt(num1) * parseInt(num2);
+        $("#answer").val(answer);
+      });
+	  
+	  $("#btn4").click(function() {
+        var num1 = $("#num1").val();
+        var num2 = $("#num2").val();
+        var answer = parseInt(num1) / parseInt(num2);
+        $("#answer").val(answer);
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+<form name="entry">
+<div id="container">
+      <label for="num1">Enter Number:</label><br>
+	  <input type="text" id="num1" name="num1" value=""><br>
+	 
+	  <label for="t2">Enter Number:</label><br>
+	  <input type="text" id="num2" name="num2" value=""><br>
+	  
+	  <label for="res">Show Result:</label><br>
+	  <input type="text" id="answer" name="answer" value=""><br><br>
+	 
+  <button id="btn1" type="button">add</button>
+  <button id="btn2" type="button">sub</button>
+  <button id="btn3" type="button">mul</button>
+  <button id="btn4" type="button">div</button>
+</div>	   
+</form>	
+</body>
+
+</html>

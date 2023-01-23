@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>mypage</title>
+<style>
+#container{
+background-color:lightgray;
+width:20%;
+padding:10px;
+}
+</style>
+</head>
+<body>
+<form name="entry">
+<div id="container">
+      <label for="t1">Enter Number:</label><br>
+	  <input type="text" id="t1" name="t1" value=""><br>
+	 
+	  <label for="t2">Enter Number:</label><br>
+	  <input type="text" id="t2" name="t2" value=""><br>
+	  
+	  <label for="res">Show Result:</label><br>
+	  <input type="text" id="res" name="res" value=""><br><br>
+	 
+	 
+	  
+	   <input type="button" value="Add" onclick="javascript:sum()"/>
+	   <input type="button" value="Sub" onclick="javascript:sub()"/>
+	   <input type="button" value="Mul" onclick="javascript:mul()"/>
+	   <input type="button" value="Div" onclick="javascript:div()"/>
+</div>	   
+</form>	
+<script language="javascript">
+       function sum()
+       {
+           var a,b,c
+		   a=parseInt(entry.t1.value)
+		   b=parseInt(entry.t2.value)
+		   c=a+b
+		   entry.res.value=c
+        }   
+		
+		function sub()
+       {
+           var a,b,c
+		   a=parseInt(entry.t1.value)
+		   b=parseInt(entry.t2.value)
+		   c=a-b
+		   entry.res.value=c
+        }   
+		
+		function mul()
+       {
+           var a,b,c
+		   a=parseInt(entry.t1.value)
+		   b=parseInt(entry.t2.value)
+		   c=a*b
+		   entry.res.value=c
+        }   
+		
+		function div()
+       {
+           var a,b,c
+		   a=parsfloat(entry.t1.value)
+		   b=parsefloat(entry.t2.value)
+		   c=a/b
+		   entry.res.value=c
+        }   
+</script>		   
+</body>
+</html>

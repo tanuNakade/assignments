@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>mypage</title>
+</head>
+<body>
+<form name="entry">
+      <p>Enter Number:<input type="text" id="t1" name="t1" value=""></p>
+	  <p>Enter Number:<input type="text" id="t2" name="t2" value=""></p>
+	  
+	  <p>show result:<input type="text" id="res" name="res" value=""></p>
+	  
+	  
+	   <p><input type="button" value="add" onclick="javascript:sum()"></p>
+	   <p><input type="button" value="sub" onclick="javascript:sub()"></p>
+	   <p><input type="button" value="mul" onclick="javascript:mul()"></p>
+	   <p><input type="button" value="div" onclick="javascript:div()"></p>
+
+</form>	
+<script language="javascript">
+       function sum()
+       {
+           var a,b,c
+		   a=parseInt(entry.t1.value)
+		   b=parseInt(entry.t2.value)
+		   c=a+b
+		   entry.res.value=c
+        }   
+		
+		function sub()
+       {
+           var a,b,c
+		   a=parseInt(entry.t1.value)
+		   b=parseInt(entry.t2.value)
+		   c=a-b
+		   entry.res.value=c
+        }   
+		
+		function mul()
+       {
+           var a,b,c
+		   a=parseInt(entry.t1.value)
+		   b=parseInt(entry.t2.value)
+		   c=a*b
+		   entry.res.value=c
+        }   
+		
+		function div()
+       {
+           var a,b,c
+		   a=parseInt(entry.t1.value)
+		   b=parseInt(entry.t2.value)
+		   c=a/b
+		   entry.res.value=c
+        }   
+</script>		   
+</body>
+</html>

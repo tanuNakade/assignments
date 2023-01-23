@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>mypage</title>
+</head>
+<script>
+function loginvalidation()
+{
+if(document.login.email.value=='')
+{
+alert("please enter email");
+return false;
+}
+if(document.login.pass.value=='')
+{
+alert("please enter password");
+return false;
+}
+}
+</script>
+<body>
+<form name="login" method="post" onsubmit="return loginvalidation()">
+<table width=50%" height="50%" border="1" cellpadding="20" align="center" bgcolor="lightpink">
+<tr>
+<th>Email</th>
+<td><input type="text" name="email" id="email" value="" class="txt"></td>
+</tr>
+<tr>
+<th>Password</th>
+<td><input type="password" name="pass" id="pass" class="txt" value="" placeholder=""></td>
+</tr>
+<tr>
+<th colspan="4"><input type="submit" name="save" id="save" value="login" class=""></th>
+</tr>
+</form>
+
+</table>
+</body>
+</html>
