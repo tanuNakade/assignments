@@ -1,5 +1,5 @@
 #clockContainer{  
-    position: relative;
+    position: absolute;
     margin: auto;
     height: 40vw;
     width: 40vw; 
